@@ -311,6 +311,23 @@ body {
    font-weight: 300;
 }
 
+.error {
+   display: block;
+   text-align: center;
+   color: red;
+   margin-top: 5px;
+   text-transform: uppercase;
+}
+
+.success {
+   display: block;
+   text-align: center;
+   color: green;
+   margin: 10px auto;
+   text-transform: uppercase;
+
+}
+
 .menu li a {
    color: rgba(153, 153, 153, 1);
    text-decoration: none;
@@ -413,7 +430,7 @@ body {
 
 .form {
    max-width: 487px;
-   max-height: 526px;
+   max-height: 600px;
    padding: 35px 40px 40px 40px;
    border-radius: 15px;
    gap: 35px;

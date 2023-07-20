@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -138,6 +142,18 @@
                                  <label>Я принимаю условия передачи информации</label>
                               </div>
                               <input type="submit" value="Связаться с нами">
+                              <?php
+                              if (isset($_SESSION['error'])) { ?>
+                                 <span class="error"><?= $_SESSION['message'] ?></span>
+                              <?php unset($_SESSION['error']);
+                              }
+                              ?>
+                              <?php
+                              if (isset($_SESSION['success'])) { ?>
+                                 <span class="success"><?= $_SESSION['message'] ?></span>
+                              <?php unset($_SESSION['success']);
+                              }
+                              ?>
                            </div>
                         </form>
                      </div>
